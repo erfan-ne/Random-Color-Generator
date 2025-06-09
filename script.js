@@ -5,7 +5,9 @@ const copyBtn = document.querySelector("#copy-btn")
 
 let color = null;
 
-generateBtn.addEventListener("click" , () => {
+const loadPage = () => generateColor()
+
+const generateColor = () => {
     let red = Math.floor(Math.random() * 255)
     let green = Math.floor(Math.random() * 255)
     let blue = Math.floor(Math.random() * 255)
@@ -14,9 +16,10 @@ generateBtn.addEventListener("click" , () => {
 
     colorCode.innerHTML = color
     colorCard.style.backgroundColor = color
-    
-})
+}
+
+generateBtn.addEventListener("click" , generateColor)
 
 copyBtn.addEventListener("click" , () => {
-    navigator.clipboard.writeText()
+    navigator.clipboard.writeText(color)
 })
