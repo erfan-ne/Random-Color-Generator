@@ -63,11 +63,6 @@
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -175,6 +170,7 @@ body {
 
 button {
   border: none;
+  cursor: pointer;
 }
 
 .color-card {
@@ -184,4 +180,11 @@ button {
   border-radius: 0.25rem;
   --tw-bg-opacity: 1;
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+}
+
+a {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  text-decoration: none;
+  color: rgb(0, 119, 255);
 }
