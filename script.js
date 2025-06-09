@@ -18,8 +18,11 @@ const generateColor = () => {
     colorCard.style.backgroundColor = color
 }
 
+const copyColor = () => {
+    navigator.clipboard.writeText(color)
+    
+}
+
 generateBtn.addEventListener("click" , generateColor)
 
-copyBtn.addEventListener("click" , () => {
-    navigator.clipboard.writeText(color)
-})
+copyBtn.addEventListener("click" , copyColor)
