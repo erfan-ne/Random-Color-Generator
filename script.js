@@ -1,12 +1,16 @@
-var age = prompt("How old are you?")
-var gender = prompt("What is your gender? male or female")
+const generateBtn = document.querySelector(".generate-btn")
+const colorCard = document.querySelector(".color-card")
+const colorCode = document.querySelector(".color-code")
+const copyBtn = document.querySelector("#copy-btn")
 
-// if (age < 18 || gender == "female") {
-//     alert("Not Ok")
-// } else if (age >= 18 & gender == "male") {
-//     alert ("ok")
-// } else {
-//     alert ("The information entered is not correct")
-// }
+generateBtn.addEventListener("click" , () => {
+    let red = Math.floor(Math.random() * 255)
+    let green = Math.floor(Math.random() * 255)
+    let blue = Math.floor(Math.random() * 255)
 
-age < 18 || gender == "female" ? alert("Not Ok") : (age >= 18 & gender == "male") ? alert ("ok") : alert ("The information entered is not correct")
+    colorCode.innerHTML = `rgb(${red},${green},${blue})`
+    colorCard.style.backgroundColor =  `rgb(${red},${green},${blue})`
+    
+})
+
+copyBtn.addEventListener("click")
