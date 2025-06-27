@@ -12,11 +12,9 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    padding: 10rem 0;
+    height: 100vh;
+    justify-content: center;
     align-items: center;
-  }
-
-  .title {
   }
 
   .card {
