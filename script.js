@@ -18,6 +18,9 @@ const generateColor = () => {
     colorCard.style.backgroundColor = color
 }
 
+
+// change svg in copy btn when user clicked
+
 const copyColor = () => {
     navigator.clipboard.writeText(color)
     copyBtn.innerHTML =
