@@ -7,6 +7,7 @@ let color = null;
 
 const loadPage = () => generateColor()
 
+// change color box with generate btn or refresh page
 const generateColor = () => {
     let red = Math.floor(Math.random() * 255)
     let green = Math.floor(Math.random() * 255)
@@ -20,7 +21,6 @@ const generateColor = () => {
 
 
 // change svg in copy btn when user clicked
-
 const copyColor = () => {
     navigator.clipboard.writeText(color)
     copyBtn.innerHTML =
