@@ -43,3 +43,19 @@
     margin-top: 10px;
     font-weight: bold;
   }
+
+  .bt-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16rem;
+    height: 3rem;
+  }
+
+  button {
+
+  }
+
+  .generate-btn{
+    
+  }
