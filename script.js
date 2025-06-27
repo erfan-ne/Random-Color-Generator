@@ -5,7 +5,11 @@ const copyBtn = document.querySelector("#copy-btn")
 
 let color = null;
 
+
+
 const loadPage = () => generateColor()
+
+
 
 // change color box with generate btn or refresh page
 const generateColor = () => {
@@ -18,6 +22,7 @@ const generateColor = () => {
     colorCode.innerHTML = color
     colorCard.style.backgroundColor = color
 }
+
 
 
 // change svg in copy btn when user clicked
